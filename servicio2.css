@@ -1,0 +1,85 @@
+/* Estilos solo del servicio 2 (para no chocar con style.css del estudiante 1) */
+.servicio2 {
+  --azul: #14365d;
+  --amarillo: #f2b705;
+  --papel: #f7f4ee;
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.6;
+  color: #1d2733;
+  background: var(--papel);
+}
+
+.servicio2 .menu2 { display: flex; gap: 1.5rem; flex-wrap: wrap; padding: 1rem 2rem; background: var(--azul); }
+.servicio2 .menu2 a { color: #fff; text-decoration: none; }
+.servicio2 .menu2 a:hover,
+.servicio2 .menu2 a:focus-visible,
+.servicio2 .menu2 a[aria-current="page"] { color: var(--amarillo); }
+.servicio2 .menu2 a[aria-current="page"] { font-weight: bold; }
+
+.servicio2 .portada2 {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center;
+  max-width: 1000px; margin: 0 auto; padding: 3rem 2rem;
+}
+.servicio2 .portada2 h1 { font-size: 2.6rem; line-height: 1.15; margin: 0 0 1rem; color: var(--azul); }
+.servicio2 img { max-width: 100%; height: auto; border-radius: 12px; }
+
+.servicio2 main { max-width: 800px; margin: 0 auto; padding: 0 2rem 2rem; }
+.servicio2 h2 { color: var(--azul); margin-top: 2.5rem; }
+
+.servicio2 .boton,
+.servicio2 button {
+  display: inline-block; padding: .7rem 1.2rem; font: inherit; font-weight: bold;
+  color: var(--azul); background: var(--amarillo); border: 0; border-radius: 6px;
+  cursor: pointer; text-decoration: none;
+}
+.servicio2 .boton:focus-visible,
+.servicio2 button:focus-visible,
+.servicio2 input:focus-visible,
+.servicio2 select:focus-visible,
+.servicio2 summary:focus-visible { outline: 3px solid var(--azul); outline-offset: 2px; }
+
+/* Pestañas */
+.servicio2 .pestanas { display: flex; gap: .5rem; flex-wrap: wrap; margin-bottom: 1rem; }
+.servicio2 .pestanas button { background: #dfe6ee; }
+.servicio2 .pestanas button.activa { background: var(--azul); color: #fff; }
+.servicio2 .panel { display: grid; grid-template-columns: 1fr 1.2fr; gap: 1.5rem; align-items: center; }
+.servicio2 .panel h3 { margin-top: 0; color: var(--azul); }
+
+/* Tabla */
+.servicio2 .tabla-scroll { overflow-x: auto; }
+.servicio2 table { width: 100%; border-collapse: collapse; background: #fff; }
+.servicio2 th, .servicio2 td { padding: .7rem 1rem; border: 1px solid #c9d1da; text-align: left; }
+.servicio2 th { background: var(--azul); color: #fff; }
+.servicio2 tbody tr:nth-child(even) { background: #eef2f7; }
+
+/* Quiz y formulario */
+.servicio2 fieldset { margin: 0 0 1rem; border: 1px solid #c9d1da; border-radius: 8px; background: #fff; }
+.servicio2 fieldset label { display: block; padding: .2rem 0; }
+.servicio2 form label,
+.servicio2 .calc label { display: block; margin-bottom: 1rem; }
+.servicio2 input[type="text"],
+.servicio2 input[type="email"],
+.servicio2 select { display: block; width: 100%; max-width: 360px; padding: .5rem; font: inherit; border: 1px solid #9aa7b5; border-radius: 6px; }
+.servicio2 input[type="range"] { display: block; width: 100%; max-width: 360px; }
+.servicio2 .resultado { font-weight: bold; color: var(--azul); }
+
+/* Tarjeta de vocabulario */
+.servicio2 .tarjeta {
+  display: flex; flex-direction: column; align-items: center; gap: .5rem;
+  width: 100%; max-width: 320px; padding: 1rem; font-size: 1.6rem;
+  background: #fff; color: var(--azul); border: 2px solid var(--azul);
+}
+.servicio2 .tarjeta.volteada { background: var(--azul); color: #fff; }
+.servicio2 .controles { display: flex; align-items: center; gap: 1rem; margin-top: 1rem; }
+
+/* Preguntas frecuentes */
+.servicio2 details { margin-bottom: .5rem; padding: .6rem 1rem; background: #fff; border: 1px solid #c9d1da; border-radius: 8px; }
+.servicio2 summary { cursor: pointer; font-weight: bold; }
+
+.servicio2 footer { padding: 1.5rem 2rem; text-align: center; color: #fff; background: var(--azul); }
+
+@media (max-width: 700px) {
+  .servicio2 .portada2,
+  .servicio2 .panel { grid-template-columns: 1fr; }
+}

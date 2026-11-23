@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" role="img" aria-label="Pila de libros">
+  <rect width="400" height="260" fill="#f6e7b4"/>
+  <rect x="70" y="170" width="260" height="40" rx="6" fill="#14365d"/><rect x="90" y="180" width="120" height="6" fill="#f2b705"/>
+  <rect x="90" y="128" width="220" height="40" rx="6" fill="#2f7f6f"/><rect x="110" y="138" width="90" height="6" fill="#f7f4ee"/>
+  <rect x="110" y="86" width="180" height="40" rx="6" fill="#b5483a"/><rect x="130" y="96" width="70" height="6" fill="#f7f4ee"/>
+  <path d="M170 84c0-30 30-46 30-46s30 16 30 46z" fill="#f2b705"/>
+</svg>

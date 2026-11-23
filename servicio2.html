@@ -1,85 +1,260 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Para artistas - SonicWave</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/bootstrap.min.css">
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estudio de inglés | Servicio 2</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="servicio2.css">
 </head>
-<body>
-  <nav class="navbar navbar-expand-lg navbar-dark scrolled fixed-top">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="index.html"><span class="brand-mark">S</span>SonicWave</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"><span class="navbar-toggler-icon"></span></button>
-      <div class="collapse navbar-collapse" id="menu">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="index.html#descubre">Descubre</a></li>
-          <li class="nav-item"><a class="nav-link" href="servicio1.html">Servicio 1</a></li>
-          <li class="nav-item"><a class="nav-link active" href="servicio2.html">Servicio 2</a></li>
-        </ul>
-      </div>
-    </div>
+<body class="servicio2">
+
+  <nav class="menu2">
+    <a href="index.html">Inicio</a>
+    <a href="servicio1.html">Servicio 1</a>
+    <a href="servicio2.html" aria-current="page">Estudio de inglés</a>
   </nav>
 
-  <main class="service-page">
-    <section class="service-hero artist-hero">
-      <div class="container">
-        <div class="row align-items-center min-vh-100 py-5">
-          <div class="col-lg-6 text-white">
-            <span class="eyebrow">SERVICIO 02</span>
-            <h1>De tu estudio<br>al mundo</h1>
-            <p class="lead">Distribuye tus lanzamientos, conoce a tu publico y convierte cada reproduccion en una nueva oportunidad.</p>
-            <a class="btn btn-accent rounded-pill px-4" href="#contenido">Conocer el servicio</a>
-          </div>
-          <div class="col-lg-6 mt-5 mt-lg-0">
-            <img class="detail-main-image" src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Mesa de mezclas en un estudio de grabacion">
-          </div>
+  <header class="portada2">
+    <div>
+      <h1>Aprende inglés a tu ritmo</h1>
+      <p>Clases en grupos pequeños y asesoría personalizada, desde el nivel A1 hasta el C2. Practicas hablando desde la primera clase.</p>
+      <a class="boton" href="#prueba">Hacer la prueba de nivel</a>
+    </div>
+    <img src="img/ingles.svg" alt="Dos globos de diálogo: Hello y Hola">
+  </header>
+
+  <main>
+    <!-- 1. Pestañas de niveles -->
+    <section id="niveles">
+      <h2>Elige tu nivel</h2>
+      <div class="pestanas" role="tablist" aria-label="Niveles de inglés"></div>
+      <div class="panel" id="panel-nivel" role="tabpanel">
+        <img id="nivel-img" src="" alt="">
+        <div>
+          <h3 id="nivel-titulo"></h3>
+          <p id="nivel-desc"></p>
+          <p><strong>Horario:</strong> <span id="nivel-horario"></span></p>
+          <p><strong>Precio:</strong> Bs. <span id="nivel-precio"></span> al mes</p>
         </div>
       </div>
     </section>
 
-    <section class="service-page-content py-5" id="contenido">
-      <div class="container py-5">
-        <div class="row g-5 align-items-start">
-          <div class="col-lg-7">
-            <span class="eyebrow dark">DISTRIBUCION GLOBAL</span>
-            <h2>Herramientas para artistas independientes</h2>
-            <p>Nuestro portal permite registrar canciones, cargar archivos de audio y elegir una fecha de lanzamiento. Antes de publicarse, el equipo revisa metadatos, derechos de autor y calidad tecnica.</p>
-            <p>El panel de analiticas presenta reproducciones por semana, ciudades con mas oyentes, dispositivos utilizados y canciones que generan mayor retencion. Estos datos ayudan a planificar conciertos y campañas promocionales.</p>
-            <ul class="detail-list">
-              <li>Distribucion a todos los paises disponibles</li>
-              <li>Registro de autores y productores</li>
-              <li>Panel de estadisticas mensuales</li>
-              <li>Promocion en radios tematicas</li>
-              <li>Pagos transparentes por reproduccion</li>
-            </ul>
-          </div>
-          <div class="col-lg-5">
-            <img class="detail-secondary-image" src="https://images.unsplash.com/photo-1598653222000-6b7b7a552625?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="Artista produciendo musica en un estudio">
-          </div>
-        </div>
-
-        <div class="detail-table-wrap mt-5">
-          <h3 class="mb-3">Planes para creadores</h3>
-          <div class="table-responsive">
-            <table class="table service-table">
-              <thead><tr><th>Plan</th><th>Lanzamientos</th><th>Analiticas</th><th>Comision</th></tr></thead>
-              <tbody>
-                <tr><td>Independiente</td><td>1 por mes</td><td>Basicas</td><td>15%</td></tr>
-                <tr><td>Profesional</td><td>Ilimitados</td><td>Avanzadas</td><td>10%</td></tr>
-                <tr><td>Sello musical</td><td>Multiples artistas</td><td>Personalizadas</td><td>Negociable</td></tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
+    <!-- Tabla resumen -->
+    <section>
+      <h2>Resumen de niveles y precios</h2>
+      <div class="tabla-scroll">
+        <table>
+          <thead>
+            <tr><th>Nivel</th><th>Para quién es</th><th>Horario</th><th>Precio mensual</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>A1 – A2</td><td>Principiantes</td><td>Lun y mié, 18:00</td><td>Bs. 150</td></tr>
+            <tr><td>B1 – B2</td><td>Intermedio</td><td>Mar y jue, 18:00</td><td>Bs. 180</td></tr>
+            <tr><td>C1 – C2</td><td>Avanzado</td><td>Sáb, 09:00</td><td>Bs. 200</td></tr>
+          </tbody>
+        </table>
       </div>
+    </section>
+
+    <!-- 2. Prueba de nivel -->
+    <section id="prueba">
+      <h2>Prueba de nivel</h2>
+      <p>Responde las 5 preguntas y te recomendamos un nivel.</p>
+      <div id="quiz"></div>
+      <button id="btnQuiz" type="button">Ver mi nivel</button>
+      <p id="resultadoQuiz" class="resultado" aria-live="polite"></p>
+    </section>
+
+    <!-- 3. Tarjetas de vocabulario -->
+    <section>
+      <h2>Vocabulario del día</h2>
+      <p>Toca la tarjeta para ver la traducción.</p>
+      <button id="tarjeta" class="tarjeta" type="button" aria-live="polite">
+        <img id="tarjeta-img" src="" alt="">
+        <span id="tarjeta-texto"></span>
+      </button>
+      <div class="controles">
+        <button id="prev" type="button">Anterior</button>
+        <span id="contador"></span>
+        <button id="next" type="button">Siguiente</button>
+      </div>
+    </section>
+
+    <!-- 4. Calculadora -->
+    <section>
+      <h2>Calcula tu inversión</h2>
+      <div class="calc">
+        <label>Nivel
+          <select id="calcNivel">
+            <option value="150">A1 – A2 (Bs. 150)</option>
+            <option value="180">B1 – B2 (Bs. 180)</option>
+            <option value="200">C1 – C2 (Bs. 200)</option>
+          </select>
+        </label>
+        <label>Meses: <output id="mesesOut">3</output>
+          <input id="calcMeses" type="range" min="1" max="12" value="3">
+        </label>
+      </div>
+      <p class="resultado" id="calcTotal" aria-live="polite"></p>
+    </section>
+
+    <!-- 5. Preguntas frecuentes -->
+    <section>
+      <h2>Preguntas frecuentes</h2>
+      <details>
+        <summary>¿Necesito saber inglés para empezar?</summary>
+        <p>No. El nivel A1 parte desde cero.</p>
+      </details>
+      <details>
+        <summary>¿Cuántos estudiantes hay por grupo?</summary>
+        <p>Máximo 8, para que todos practiquen hablando.</p>
+      </details>
+      <details>
+        <summary>¿Puedo cambiar de nivel?</summary>
+        <p>Sí. Si avanzas rápido, pasas al siguiente nivel sin costo extra.</p>
+      </details>
+    </section>
+
+    <!-- 6. Formulario -->
+    <section id="contacto">
+      <h2>Reserva tu clase gratis</h2>
+      <form id="formReserva" novalidate>
+        <label>Nombre <input id="fNombre" type="text" required></label>
+        <label>Correo <input id="fCorreo" type="email" required></label>
+        <label>Nivel
+          <select id="fNivel">
+            <option>A1 – A2</option><option>B1 – B2</option><option>C1 – C2</option>
+          </select>
+        </label>
+        <button type="submit">Reservar</button>
+        <p id="msgForm" class="resultado" aria-live="polite"></p>
+      </form>
     </section>
   </main>
-  <script src="../js/bootstrap.bundle.min.js"></script>
+
+  <footer>
+    <p>Servicio 2: estudio de inglés. Proyecto del estudiante 2.</p>
+  </footer>
+
+  <script>
+    // ---------- 1. Pestañas de niveles ----------
+    const niveles = [
+      { id: "A", nombre: "A1 – A2: Principiante", img: "img/libros.svg", alt: "Pila de libros",
+        desc: "Aprende saludos, números, rutina diaria y frases básicas para comunicarte.", horario: "Lun y mié, 18:00", precio: 150 },
+      { id: "B", nombre: "B1 – B2: Intermedio", img: "img/conversacion.svg", alt: "Dos personas conversando",
+        desc: "Conversa sobre viajes, trabajo y opiniones. Mejora tu gramática y tu comprensión.", horario: "Mar y jue, 18:00", precio: 180 },
+      { id: "C", nombre: "C1 – C2: Avanzado", img: "img/audifonos.svg", alt: "Audífonos",
+        desc: "Entiende podcasts y noticias, escribe textos formales y prepárate para exámenes.", horario: "Sáb, 09:00", precio: 200 }
+    ];
+    const lista = document.querySelector(".pestanas");
+    function mostrarNivel(i) {
+      const n = niveles[i];
+      document.getElementById("nivel-img").src = n.img;
+      document.getElementById("nivel-img").alt = n.alt;
+      document.getElementById("nivel-titulo").textContent = n.nombre;
+      document.getElementById("nivel-desc").textContent = n.desc;
+      document.getElementById("nivel-horario").textContent = n.horario;
+      document.getElementById("nivel-precio").textContent = n.precio;
+      lista.querySelectorAll("button").forEach((b, j) => {
+        b.setAttribute("aria-selected", j === i);
+        b.classList.toggle("activa", j === i);
+      });
+    }
+    niveles.forEach((n, i) => {
+      const b = document.createElement("button");
+      b.type = "button";
+      b.setAttribute("role", "tab");
+      b.textContent = n.nombre.split(":")[0];
+      b.addEventListener("click", () => mostrarNivel(i));
+      lista.appendChild(b);
+    });
+    mostrarNivel(0);
+
+    // ---------- 2. Prueba de nivel ----------
+    const preguntas = [
+      { p: "She ___ to school every day.", o: ["go", "goes", "going"], c: 1 },
+      { p: "I ___ a movie last night.", o: ["watched", "watch", "will watching"], c: 0 },
+      { p: "If I ___ more time, I would travel.", o: ["have", "had", "will have"], c: 1 },
+      { p: "I have lived here ___ 2020.", o: ["for", "since", "during"], c: 1 },
+      { p: "The report ___ by the manager before the meeting.", o: ["was reviewed", "reviewed", "has review"], c: 0 }
+    ];
+    const quiz = document.getElementById("quiz");
+    preguntas.forEach((q, i) => {
+      const f = document.createElement("fieldset");
+      f.innerHTML = `<legend>${i + 1}. ${q.p}</legend>` +
+        q.o.map((t, j) => `<label><input type="radio" name="q${i}" value="${j}"> ${t}</label>`).join("");
+      quiz.appendChild(f);
+    });
+    document.getElementById("btnQuiz").addEventListener("click", () => {
+      let puntos = 0, sinResponder = 0;
+      preguntas.forEach((q, i) => {
+        const r = document.querySelector(`input[name="q${i}"]:checked`);
+        if (!r) sinResponder++;
+        else if (Number(r.value) === q.c) puntos++;
+      });
+      const salida = document.getElementById("resultadoQuiz");
+      if (sinResponder > 0) {
+        salida.textContent = `Te faltan ${sinResponder} pregunta(s) por responder.`;
+        return;
+      }
+      const idx = puntos <= 1 ? 0 : puntos <= 3 ? 1 : 2;
+      salida.textContent = `Acertaste ${puntos} de ${preguntas.length}. Te recomendamos el nivel ${niveles[idx].nombre.split(":")[0]}.`;
+      mostrarNivel(idx);
+    });
+
+    // ---------- 3. Tarjetas de vocabulario ----------
+    const palabras = [
+      { en: "Book", es: "Libro", img: "img/libros.svg" },
+      { en: "Headphones", es: "Audífonos", img: "img/audifonos.svg" },
+      { en: "World", es: "Mundo", img: "img/mundo.svg" },
+      { en: "Conversation", es: "Conversación", img: "img/conversacion.svg" }
+    ];
+    let actual = 0, volteada = false;
+    const tarjeta = document.getElementById("tarjeta");
+    function pintarTarjeta() {
+      const w = palabras[actual];
+      document.getElementById("tarjeta-img").src = w.img;
+      document.getElementById("tarjeta-img").alt = "";
+      document.getElementById("tarjeta-texto").textContent = volteada ? w.es : w.en;
+      tarjeta.classList.toggle("volteada", volteada);
+      document.getElementById("contador").textContent = `${actual + 1} / ${palabras.length}`;
+    }
+    tarjeta.addEventListener("click", () => { volteada = !volteada; pintarTarjeta(); });
+    document.getElementById("next").addEventListener("click", () => { actual = (actual + 1) % palabras.length; volteada = false; pintarTarjeta(); });
+    document.getElementById("prev").addEventListener("click", () => { actual = (actual - 1 + palabras.length) % palabras.length; volteada = false; pintarTarjeta(); });
+    pintarTarjeta();
+
+    // ---------- 4. Calculadora ----------
+    const selNivel = document.getElementById("calcNivel");
+    const rango = document.getElementById("calcMeses");
+    function calcular() {
+      const precio = Number(selNivel.value);
+      const meses = Number(rango.value);
+      const descuento = meses >= 6 ? 0.15 : meses >= 3 ? 0.10 : 0;
+      const total = precio * meses * (1 - descuento);
+      document.getElementById("mesesOut").textContent = meses;
+      document.getElementById("calcTotal").textContent =
+        `Total: Bs. ${total.toFixed(2)}` + (descuento ? ` (con ${descuento * 100}% de descuento)` : "");
+    }
+    selNivel.addEventListener("change", calcular);
+    rango.addEventListener("input", calcular);
+    calcular();
+
+    // ---------- 6. Formulario ----------
+    document.getElementById("formReserva").addEventListener("submit", (e) => {
+      e.preventDefault();
+      const nombre = document.getElementById("fNombre").value.trim();
+      const correo = document.getElementById("fCorreo").value.trim();
+      const nivel = document.getElementById("fNivel").value;
+      const msg = document.getElementById("msgForm");
+      if (nombre === "" || !correo.includes("@")) {
+        msg.textContent = "Escribe tu nombre y un correo válido.";
+        return;
+      }
+      msg.textContent = `Gracias, ${nombre}. Reservamos tu clase gratis del nivel ${nivel}. Te escribiremos a ${correo}.`;
+      e.target.reset();
+    });
+  </script>
 </body>
 </html>
