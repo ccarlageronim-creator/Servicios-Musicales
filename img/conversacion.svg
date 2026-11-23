@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" role="img" aria-label="Dos personas conversando">
+  <rect width="400" height="260" fill="#e3ecf5"/>
+  <circle cx="110" cy="110" r="34" fill="#14365d"/><rect x="70" y="150" width="80" height="80" rx="30" fill="#14365d"/>
+  <circle cx="290" cy="110" r="34" fill="#f2b705"/><rect x="250" y="150" width="80" height="80" rx="30" fill="#f2b705"/>
+  <rect x="120" y="28" width="90" height="42" rx="14" fill="#fff"/><text x="165" y="56" font-family="Georgia,serif" font-size="22" text-anchor="middle" fill="#14365d">Hi!</text>
+  <rect x="215" y="60" width="130" height="42" rx="14" fill="#fff"/><text x="280" y="88" font-family="Georgia,serif" font-size="20" text-anchor="middle" fill="#14365d">How are you?</text>
+</svg>
